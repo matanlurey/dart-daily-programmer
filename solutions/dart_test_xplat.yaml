@@ -1,0 +1,4 @@
+# Common test settings for multi-platform libraries.
+platforms:
+  - chrome
+  - vm
