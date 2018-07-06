@@ -9,14 +9,14 @@ import 'dart:math';
 /// void main() {
 ///   var roller = DiceRoller();
 ///   print(roller.roll('5d12'));
-///   print(roller.sum('3d6')); 
+///   print(roller.sum('3d6'));
 /// }
 /// ```
-/// 
+///
 /// ## Advanced use:
 /// ```dart
 /// import 'dart:math';
-/// 
+///
 /// import 'package:dice_roller/dice_roller.dart';
 ///
 /// void main() {
@@ -59,7 +59,7 @@ class _Expression {
 
   /// Number of sides on an individual die.
   final int sides;
-  
+
   const _Expression(this.amount, this.sides);
 
   /// Parses and returns a dice expression in the form of `"NdN"`.
@@ -74,7 +74,7 @@ class _Expression {
     // eagerly if we get anything we don't expect. The expressions should be
     // short enough that they are human understandable if they fail.
     if (expression == null) {
-      throw new ArgumentError.notNull('expression');
+      throw ArgumentError.notNull('expression');
     }
     try {
       // We now know the expression is a non-null String.
